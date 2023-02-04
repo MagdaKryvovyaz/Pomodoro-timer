@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body  class="bg-success-subtle bg-opacity-10">
+    <div class="container">
+    <header>
+        <h1 class ="text-primary p-3">Pomodoro Clock</h1>
+    </header>  
+    <div class="length">
+        <div class="break">
+            <h3 class ="text-success p-3">Break Length</h3>
+            <div class="setting">
+                <button id="minusBr" class="btn btn-outline-success">−</button>
+                <h4 id="inputLenghthBreak" class ="text-success p-3">1</h4>
+                <button id="plusBr" class="btn btn-outline-success">+</button>
+            </div>
+        </div>
+        <div class="session">
+            <h3 class="text-danger p-3">Session Length</h3>
+            <div class="setting">
+                <button id="minusSes" class="btn btn-outline-danger">-</button>
+                <h4 id="inputLenghthSession" class="text-danger p-3" >1</h4>
+                <button id="plusSes"  class="btn btn-outline-danger">+</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timer">
+        <button id="timer" class="changeMood btn btn-outline-danger">      
+            <h4 id="status">SESSION</h4>
+            <div class="timerRun">
+                <h3 id="minutes"><h3></h3>
+            </div>
+            <h4 id ="inputSession"> 1 </h4>
+        </button>
+        <div id ="timerFunction">
+            <button id ="pause" class="btn btn-outline-primary"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+              </svg></button>
+            <button id ="restart" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+              </svg> </button>
+        </div>
+
+        <h3 id ="done" class="text-primary p-3"></h3>
+    </div>
+</div>
+
+    <script src="./js.js"></script>
+</body>
+</html>
